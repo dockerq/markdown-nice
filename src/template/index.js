@@ -1,5 +1,6 @@
 import custom from "./markdown/custom";
 import normal from "./markdown/normal";
+import wechatFormat from "./markdown/wechatFormat";
 
 import content from "./content.md";
 
@@ -23,6 +24,7 @@ export default {
   basic,
   normal,
   custom,
+  wechatFormat,
   code: {
     atomOneDark,
     atomOneLight,

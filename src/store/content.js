@@ -1,6 +1,6 @@
-import {observable, action} from "mobx";
-import {CONTENT, STYLE, MARKDOWN_THEME_ID, BASIC_THEME_ID, STYLE_LABELS, THEME_LIST} from "../utils/constant";
-import {replaceStyle, addStyleLabel} from "../utils/helper";
+import { observable, action } from "mobx";
+import { CONTENT, STYLE, MARKDOWN_THEME_ID, BASIC_THEME_ID, STYLE_LABELS, THEME_LIST } from "../utils/constant";
+import { replaceStyle, addStyleLabel } from "../utils/helper";
 import TEMPLATE from "../template/index";
 
 class Content {
@@ -60,8 +60,9 @@ if (!window.localStorage.getItem(THEME_LIST)) {
   window.localStorage.setItem(
     THEME_LIST,
     JSON.stringify([
-      {themeId: "normal", name: "默认主题", css: TEMPLATE.normal},
-      {themeId: "custom", name: "自定义", css: TEMPLATE.custom},
+      { themeId: "normal", name: "默认主题", css: TEMPLATE.normal },
+      { themeId: "wechat-format", name: "画手", css: TEMPLATE.wechatFormat },
+      { themeId: "custom", name: "自定义", css: TEMPLATE.custom },
     ]),
   );
 }
